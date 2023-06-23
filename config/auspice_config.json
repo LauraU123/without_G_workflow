@@ -1,0 +1,59 @@
+{
+  "title": "Genomic epidemiology of RSV",
+  "maintainers": [
+    {"name": "Laura Urbanska", "url": "http://nextstrain.org"},
+    {"name": "Richard Neher", "url": "http://nextstrain.org"}
+
+  ],
+  "data_provenance": [
+    {
+      "name": "GenBank",
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
+    }
+  ],
+  "build_url": "https://github.com/nextstrain/rsv",
+
+  "colorings": [
+    {
+      "key": "genome_clade",
+      "title": "Genome Clade",
+      "type": "categorical"
+    },
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "num_date",
+      "title": "Date",
+      "type": "continuous"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "country",
+    "region"
+  ],
+  "panels": [
+     "tree",
+     "map",
+     "entropy"
+  ],
+  "display_defaults": {
+    "map_triplicate": true,
+    "transmission_lines": false
+    },
+  "filters": [
+    "country"
+  ]
+}
